@@ -1,13 +1,8 @@
-import "core-js/stable";
-import "regenerator-runtime/runtime";
 import { createApp } from "vue";
 import App from "./App.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import routes from "./router";
-import "./public-path";
-import { install } from "./locale";
 import { useComponent } from "@/utils/antdvRegistry.js";
-import i18n from "@/assets/language";
 import "@/styles/index.less";
 let app, router;
 
@@ -15,17 +10,13 @@ export async function bootstrap(props) {}
 
 export async function mount(props) {
   app = createApp(App);
-  install(app);
   useComponent(app);
   router = createRouter({
     // history: createWebHashHistory(__qiankun__ ? '/auth/' : '/'),
     history: createWebHistory("/"),
     routes
   });
-  app
-    .use(router)
-    .use(i18n)
-    .mount("#app");
+  app.use(router).mount("#app");
 }
 
 export async function unmount(props) {
