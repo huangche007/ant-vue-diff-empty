@@ -1,0 +1,236 @@
+// 根据UI规范，全局修改antdv组件样式，
+
+// form
+.ant-form {
+  .ant-form-item-label {
+    // 替换require图标位置
+    .ant-form-item-required::before {
+      font-size: 0;
+    }
+    .ant-form-item-required::after {
+      display: inline-block;
+      margin-right: 4px;
+      color: @error-color;
+      font-size: 14px;
+      font-family: SimSun, sans-serif;
+      line-height: 1;
+      content: "*";
+    }
+  }
+}
+.ant-form-vertical {
+  .ant-form-item {
+    padding-bottom: 0;
+    .ant-form-item-label {
+      height: 26px;
+      line-height: 24px;
+      padding-bottom: 2px;
+      font-size: 14px;
+    }
+    .ant-form-item-control-wrapper {
+      .ant-form-item-control {
+        // line-height: 1.375;
+        line-height: 22px;
+      }
+    }
+  }
+  .ant-form-item-with-help {
+    margin-bottom: 0;
+    // .has-success {
+    //   margin-bottom: 30px;
+    // }
+  }
+  .ant-form-explain {
+    height: 30px;
+    padding-top: 2px;
+    padding-bottom: 6px;
+    margin: 0;
+  }
+}
+
+// input
+.ant-input {
+  padding: 8px 12px;
+  line-height: 22px;
+}
+// input-search
+.ant-input-search {
+  padding: 8px 12px;
+  line-height: 22px;
+  .ant-input-search-icon {
+    font-size: 20px;
+  }
+}
+// input-affix
+.ant-input-affix-wrapper {
+  padding: 8px 12px;
+  line-height: 22px;
+  .ant-input-suffix {
+    color: @text-color-third;
+  }
+}
+
+// btn
+.ant-btn {
+  min-width: 104px;
+  height: 46px;
+  padding: 0 24px;
+  line-height: 46px;
+}
+
+// cascader
+.ant-cascader-menus {
+  box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05);
+  .ant-cascader-menu {
+    padding: 8px 0 0 0;
+  }
+  .ant-cascader-menu-item {
+    line-height: 18px;
+    padding: 13px 12px;
+  }
+  .ant-cascader-menu-item:hover {
+    background: @primary-color-light;
+  }
+  .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
+  .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+    background: @primary-color-light;
+    color: @primary-color;
+    font-weight: 400;
+  }
+}
+
+// message
+.ant-message-notice {
+  .ant-message-notice-content {
+    width: 395px;
+    height: 40px;
+    padding: 0;
+    text-align: left;
+    box-shadow: none;
+    div.ant-message-custom-content {
+      width: 100%;
+      height: 100%;
+      padding: 8px 16px;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 2px;
+    }
+    .ant-message-success {
+      background-color: @message-success-bg-color;
+      border-color: @message-success-border-color;
+    }
+    .ant-message-info {
+      background-color: @message-info-bg-color;
+      border-color: @message-info-border-color;
+    }
+    .ant-message-warning {
+      background-color: @message-warning-bg-color;
+      border-color: @message-warning-border-color;
+    }
+    .ant-message-error {
+      background-color: @message-error-bg-color;
+      border-color: @message-error-border-color;
+    }
+  }
+}
+
+// table
+@table-pagination-height: 100px;
+.ant-table-wrapper {
+  .ant-spin-nested-loading,
+  .ant-spin-container {
+    width: 100%;
+    height: 100%;
+  }
+  // table
+  .ant-table {
+    height: calc(100% - @table-pagination-height);
+    line-height: 24px;
+    .ant-table-content {
+      margin: 0 -1px;
+      border: 1px solid @border-color-base;
+      border-top: 0;
+    }
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      border-bottom: 1px solid @border-color-base;
+      &:first-child {
+        padding-left: 24px;
+      }
+      &:last-child {
+        padding-right: 24px;
+      }
+    }
+    .ant-table-thead > tr > th {
+      font-weight: 600;
+    }
+  }
+  //pagination
+  .ant-table-pagination.ant-pagination {
+    height: @table-pagination-height;
+    padding: 40px 0 28px;
+    margin: 0;
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+      height: 32px;
+      .ant-select-selection-search-input {
+        height: 30px;
+      }
+      .ant-select-selection-item {
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+// calendar-picker
+.ant-calendar-picker {
+  .ant-calendar-picker-input {
+    .ant-calendar-range-picker-input {
+      text-align: left !important;
+    }
+    .ant-calendar-range-picker-separator {
+      min-width: 30px;
+      padding: 0 10px;
+    }
+  }
+}
+.ant-calendar-picker-container {
+  .ant-calendar-date {
+    border-radius: 50%;
+  }
+  .ant-calendar-header {
+    background: rgba(235, 235, 235, 0.4);
+    font-weight: 500;
+    .ant-calendar-year-select,
+    .ant-calendar-month-select {
+      color: @black;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+
+// 弹窗
+.ant-modal {
+  .ant-modal-header {
+    .ant-modal-title {
+      font-weight: 600;
+      // font-size: 24px;
+    }
+  }
+  .ant-modal-body {
+    // color: @text-color-fourth;
+    .ant-modal-confirm-title {
+      color: @black;
+      font-weight: 500;
+    }
+    .ant-modal-confirm-content {
+      color: @text-color-fourth;
+      font-weight: 600;
+    }
+  }
+}
+
+.ant-select-tree {
+  max-height: 400px;
+}

@@ -1,0 +1,197 @@
+// @import '~ant-design-vue/dist/antd.less';
+@import "~./antd-variable.less";
+
+body,
+div,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: PingFang SC, Source Han Sans CN, sans-seri;
+}
+.disabled {
+  a {
+    color: #ccc !important;
+  }
+}
+.security-proof {
+  color: #262626;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 28px;
+  text-align: center;
+  margin-bottom: 78px;
+}
+.xh-sidler-dialog .ant-modal-content {
+  padding-bottom: 57px;
+  padding-left: 69px;
+  padding-right: 69px;
+}
+.forget-pwd-btn {
+  span {
+    color: @primary-color;
+    cursor: pointer;
+  }
+}
+.drag_bg {
+  background-color: @primary-color !important;
+}
+.forget-next-btn,
+.forget-confrim-btn {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 45px;
+}
+.ant-form-item {
+  margin-bottom: 40px;
+}
+
+.code-input .ant-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.code-input .ant-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.custom-one {
+  .has-error .ant-input,
+  -has-error .ant-input,
+  .has-error .ant-input-affix-wrapper,
+  -has-error .ant-input-affix-wrapper,
+  .has-error .ant-input:hover,
+  -has-error .ant-input:hover,
+  .has-error .ant-input-affix-wrapper:hover,
+  -has-error .ant-input-affix-wrapper:hover {
+    // border-color: @primary-color !important;
+  }
+}
+.form-account.has_error .ant-input-affix-wrapper,
+.form-account.has_error .ant-input-affix-wrapper:hover,
+.form-account.has_error .ant-input-affix-wrapper:focus {
+  border-color: red !important;
+  box-shadow: none;
+}
+.custom-two .has_error .ant-input-affix-wrapper,
+.custom-two .has_error .ant-input-affix-wrapper:hover,
+.custom-two .has_error .ant-input-affix-wrapper:focus {
+  border-color: red !important;
+  box-shadow: none;
+}
+.custom-one .has_error .ant-input-affix-wrapper,
+.custom-one .has_error .ant-input-affix-wrapper:hover,
+.custom-one .has_error .ant-input-affix-wrapper:focus {
+  border-color: red !important;
+  box-shadow: none;
+}
+.operate-btn-group {
+  display: flex;
+  align-items: center;
+  .ant-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ant-btn-primary {
+    margin-left: 12px;
+  }
+}
+
+.ant-input::-webkit-textfield-decoration-container {
+  background-color: transparent;
+} //添加背景色 下边两行是去掉input 输入框右边的上下箭头按钮
+.ant-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.ant-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.init-password-form {
+  .ant-form-item-label .ant-form-item-required::before {
+    font-size: 14px !important;
+  }
+  .ant-modal-header .ant-modal-title {
+    font-weight: 500 !important;
+  }
+  .ant-form-item-label .ant-form-item-required::after {
+    font-size: 14px !important;
+    content: ":";
+    position: relative;
+    color: #262626 !important;
+    top: -0.5px;
+    margin: 0 8px 0 2px;
+  }
+  .ant-form-item-label {
+    width: 120px;
+  }
+  .ant-form-item-control-wrapper {
+    flex: 1;
+  }
+}
+.tab-login-wrapper {
+  .tab-item-login-tip-active {
+    color: @primary-color !important;
+  }
+  .tab-item-line {
+    background: @primary-color !important;
+  }
+}
+.login-code-input {
+  height: 40px !important;
+}
+.warning-tip {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  &-icon,
+  .warning-tip-len-err-icon,
+  .warning-tip-len-ok-icon {
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 8px !important;
+  }
+}
+.ant-tooltip {
+  max-width: 100% !important;
+}
+.ant-tooltip-placement-topLeft .ant-tooltip-arrow {
+  bottom: -6px;
+}
+
+.no-data-warpper {
+  p {
+    width: 100%;
+    color: #bfbfbf;
+    font-size: 14px;
+  }
+}
