@@ -69,6 +69,7 @@ export default defineComponent({
       if (flag == 1) {
         // normal
         dataSource.value = []
+        mLocale.value = useNoData('暂无数据1').locale
       } else {
         dataSource.value = []
         mLocale.value = useNoData('暂无数据2', 1).locale
