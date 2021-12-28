@@ -5,7 +5,6 @@
  * @returns
  */
 export default function(tip = "暂无数据", flag = 0) {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
   let img: any = require("@/assets/images/noData/no-data-icon.png");
   switch (flag) {
     case 1: //示例代码
