@@ -13,7 +13,6 @@ export default defineComponent({
 </script>
 
 <style lang="less">
-@import '~ant-design-vue/dist/antd.less';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
