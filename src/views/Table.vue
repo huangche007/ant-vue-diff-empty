@@ -15,7 +15,7 @@
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
-import useNoData from '@/hooks/useNoData'
+import useNoData from '../hooks/useNoData.tsx'
 export default defineComponent({
   setup() {
     const dataSource: any = ref([
