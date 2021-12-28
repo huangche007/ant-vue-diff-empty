@@ -11,7 +11,6 @@ const CompressionWebpackPlugin = require('compression-webpack-plugin')
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { name } = require('./package.json');
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
@@ -98,12 +97,6 @@ module.exports = {
         alias: {
           '@': resolve('src')
         }
-      },
-      output: {
-        // 把子应用打包成 umd 库格式
-        library: `${name}-[name]`,
-        libraryTarget: 'umd',
-        jsonpFunction: `webpackJsonp_${name}`
       }
     }
   },
