@@ -1,7 +1,7 @@
 <template>
-  <a-configprovider>
+  <a-config-provider>
     <router-view />
-  </a-configprovider>
+  </a-config-provider>
 
 </template>
 
