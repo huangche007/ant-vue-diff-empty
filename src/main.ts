@@ -2,7 +2,6 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import routes from "./router";
-import "./styles/index.less";
 import { useComponent } from "@/utils/antdvRegistry.js";
 let app, router;
 // eslint-disable-next-line prefer-const
